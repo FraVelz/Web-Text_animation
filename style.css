@@ -1,0 +1,160 @@
+
+/* ************************* General ************************* */
+* {
+    box-sizing: border-box;
+    padding: 0; margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+:root {
+    --clr-mode-dark: linear-gradient(to bottom, rgb(50, 50, 50), rgb(20, 20, 20));
+    --clr-mode-light: linear-gradient(to bottom, rgb(50, 50, 50), rgb(20, 20, 20));
+    --clr-fondo: rgb(60, 160, 110);
+    --clr-text: rgb(50, 50, 50)
+}
+
+body {
+    min-height: 100vh;
+    background: var(--clr-mode-dark);
+    color: var(--clr-text);
+}
+
+.cont {
+    min-width: 570px; width: 90vw; 
+    margin: 20px auto; padding: 10px;
+
+    border-radius: 10px;
+    background: var(--clr-fondo);
+
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    justify-content: center;
+    gap: 10px;
+}
+
+/* ************************* Position ************************* */
+
+.title {
+    text-align: center;
+    grid-column: 2 / 2 span;
+}
+
+.btn-mode {
+    grid-column: 4 / 1 span;
+}
+
+.color1, .color2 {
+    grid-column: 2 / 2 span;
+}
+
+
+/* ************************* Row 1 ************************* */
+
+.transparent, .mode {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.transparent p, .mode p {
+    margin-left: 5px; font-size: 1.2rem;
+}
+
+.border {
+    width: 32px; height: 32px;
+    border-radius: 30%;
+    border: 3px solid;
+}
+
+.circle {
+    width: 16px; height: 16px;
+    margin: 5px;
+
+    border-radius: 50%;
+    background: var(--clr-text);
+}
+
+.center {
+    height: max-content;
+    align-self: center;
+}
+
+/* ************************* Row 2-3 ************************* */
+
+.subtitle { font-size: 1.5rem; width: min-content; }
+
+.color1, .color2 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.__color { height: 37px; }
+
+.__text, .__btn {
+    padding: 5px; font-size: 1.2rem;
+}
+
+.__text { 
+    width: 180px; 
+    border: 2px solid var(--clr-text);
+    border-left: none;
+    outline: none;
+}
+
+.__btn {
+    background-color: transparent;
+
+    border-radius: 0px 20px 20px 0px;
+    border: 2px solid var(--clr-text);
+    color: var(--clr-text);
+}
+
+.info {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+/* ************************* Row 4 ************************* */
+
+/* ************************* Row 5 ************************* */
+.text-show {
+    height: 40px;
+    font-size: 1.2rem;
+}
+
+.btn-start, .btn-update {
+    font-size: 1.2rem;
+    text-align: center;
+    text-decoration: none;
+
+    border-radius: 20px;
+    border: 2px solid var(--clr-text);
+
+    background: transparent;
+    color: var(--clr-text);
+}
+
+.author {
+    text-align: end;
+    font-size: 1rem;
+}
+
+/* ************************* Show ************************* */
+
+.show-text {
+    height: 100vh; 
+    background: var(--clr-fondo);
+    overflow:hidden;
+}
+
+.h2-show-text {
+    font-size: 80vh;
+    width: max-content;
+    white-space: nowrap;
+
+    position: relative;
+    left:  100%;
+    color: var(--clr-text);
+}
+
+/** Author: FraVelz */

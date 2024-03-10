@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Show Text</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display= swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="cont">
+        <!-- *********************** Row 1 *********************** -->
+
+        <div class="transparent">
+            <div class="border"><div class="circle"></div></div>
+            <p>Transparent</p>
+        </div>
+
+        <h1 class="title center">Show Text</h1>
+
+        <div class="mode">
+            <div class="border"><div class="circle"></div></div>
+            <p>Light mode</p>
+        </div>
+
+        <!-- *********************** Row 2 *********************** -->
+        <h2 class="subtitle center">Background Color</h2>
+
+        <div class="color1 center">
+            <input class="__color n-1" type="color"/>
+            <input class="__text n-1" type="text"/>
+            <input class="__btn n-1" type="button" value="Update" />
+        </div>
+
+        <p class="info center">Current info</p>
+
+        <!-- *********************** Row 3 *********************** -->
+        <h2 class="subtitle center">Text Color</h2>
+
+        <div class="color2 center">
+            <input class="__color n-2" type="color"/>
+            <input class="__text n-2" type="text"/>
+            <input class="__btn n-2" type="button" value="Update"/>
+        </div>
+
+        <p class="info center">Current info</p>
+
+        <!-- *********************** Row 4 *********************** -->
+
+        <h2 class="subtitle center">Speed</h2>
+
+        <input class="text-show center" type="text" placeholder="Speed(1000 => 1s)" class="text center"/>
+        <input class="btn-update center" type="button" value="Update"/>
+        <p class="info center">Current info</p>
+
+        <!-- *********************** Row 5 *********************** -->
+
+        <h2 class="subtitle center">Text</h2>
+        <input class="text-show center" type="text" placeholder="Text"/>
+
+        <a href="#show" class="btn-start center">Let's Go</a>
+        <p class="author">Author: Francisco Velez | FraVelz</p>
+    </div>
+
+    <div class="show-text" id="show">
+        <h2 class="h2-show-text">I Love You :)</h2>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+<!--* Author: FraVelz -->
