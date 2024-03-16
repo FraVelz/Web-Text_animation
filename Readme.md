@@ -1,5 +1,5 @@
 # Web-Text_Animation
-Web page to show animated text on the screen.
+#5 Project on the web using Html, CSS, Javascript. Web page to show animated text on the screen.
 
 **Image 1**
 
